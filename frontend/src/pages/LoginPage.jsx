@@ -102,9 +102,9 @@ const LoginPage = () => {
                 />
                 <label
                   htmlFor="email"
-                  className="absolute left-12 top-3 text-gray-400 text-sm transition-all duration-200
-                    peer-placeholder-shown:top-1/2 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-500 peer-placeholder-shown:-translate-y-1/2
-                    peer-focus:top-2 peer-focus:text-xs peer-focus:text-[#605dff]"
+                  className="absolute left-12 -top-2.5 text-[#605dff] text-xs bg-[#0f1419] px-1 transition-all duration-200
+                    peer-placeholder-shown:top-1/2 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-500 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:bg-transparent
+                    peer-focus:-top-2.5 peer-focus:text-xs peer-focus:text-[#605dff] peer-focus:bg-[#0f1419]"
                 >
                   Email
                 </label>
@@ -124,9 +124,9 @@ const LoginPage = () => {
                 />
                 <label
                   htmlFor="password"
-                  className="absolute left-12 top-3 text-gray-400 text-sm transition-all duration-200
-                    peer-placeholder-shown:top-1/2 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-500 peer-placeholder-shown:-translate-y-1/2
-                    peer-focus:top-2 peer-focus:text-xs peer-focus:text-[#605dff]"
+                  className="absolute left-12 -top-2.5 text-[#605dff] text-xs bg-[#0f1419] px-1 transition-all duration-200
+                    peer-placeholder-shown:top-1/2 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-500 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:bg-transparent
+                    peer-focus:-top-2.5 peer-focus:text-xs peer-focus:text-[#605dff] peer-focus:bg-[#0f1419]"
                 >
                   Password
                 </label>
