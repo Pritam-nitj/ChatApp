@@ -7,7 +7,7 @@ A **real-time chat app** built with the **MERN Stack**, **Socket.io**, **Tailwin
 ## 🚀 Features
 
 - ⚡ **Instant Messaging:** Real-time two-way communication using **Socket.io**.
--  **Authentication:** Secure login & signup with **JWT tokens**.
+- **Authentication:** Secure login & signup with **JWT tokens**.
 - 🟢 **Online Status:** Track and display online/offline users dynamically.
 - 🌐 **Cloud Storage:** Store and manage user images with **Cloudinary**.
 - 🧠 **Global State Management:** Smooth UI updates with **Zustand**.
@@ -18,8 +18,8 @@ A **real-time chat app** built with the **MERN Stack**, **Socket.io**, **Tailwin
 
 ## 🧰 Tech Stack
 
-| Category             | Technologies                                           |
-| -------------------- | ------------------------------------------------------ |
+| Category                   | Technologies                                           |
+| -------------------------- | ------------------------------------------------------ |
 | **Frontend**         | React, Zustand, TailwindCSS, DaisyUI, Socket.io-client |
 | **Backend**          | Node.js, Express.js, MongoDB, Socket.io                |
 | **Authentication**   | JWT (JSON Web Token)                                   |
@@ -31,9 +31,29 @@ A **real-time chat app** built with the **MERN Stack**, **Socket.io**, **Tailwin
 
 ---
 
-## ⚙️ Environment Variables
+## ⚙️ Setup Guide
 
-Create a `.env` file in your `backend/` directory with the following keys:
+##### First fork the repo
+
+```bash
+git clone <your-github-repo-link>
+cd ChatApp
+```
+
+### Setup for Backend
+
+```env
+cd backend
+npm install
+```
+
+#### setup for the backend environment Variable
+
+```env
+cp .env.example .env
+```
+
+This is created a .env in the root folder of the backend which is contains this
 
 ```env
 MONGODB_URI=
@@ -51,53 +71,96 @@ CLOUDINARY_API_SECRET=
 FRONTEND_URL=
 SENDER_EMAIL =
 BREVO_API_KEY=
+
 ```
 
-```bash
-git clone <your-github-repo-link>
-cd ChatApp
+##### Run the Backend
 
-cd backend
+```bash
+npm run dev
+```
+
+---
+
+### Setup for Frontend
+
+Go to the frontend directory
+
+```bash
+cd frontend
+
 npm install
 ```
 
-Create a `.env` file in your `frontend/` directory with the following keys:
+#### setup for the frontend environment Variable
+
+```bash
+cp .env.example .env
+```
+
+##### This is created a .env inside the root folder of the frontend
 
 ```env
-VITE_GIPHY_API=
+VITE_GOOGLE_CLIENT_ID=
+VITE_BACKEND_URL=
+
+VITE_GIPHY_API= 
 ```
 
-### Installation
+##### Run the frontend
 
-**Option 1: Run with Docker**
+```bash
+npm run dev
+```
 
-1. **Build and run the Docker containers**
-   ```bash
-   docker-compose up --build
-   ```
-2. **Access the application**
-   - Frontend: http://localhost:5173
-   - Backend: http://localhost:5001
+#### Note
 
-**Option 2: Run both servers manually**
+```bash
+For best results and to avoid CORS issues, make sure your servers run on the following URLs:
+
+Frontend → http://localhost:5173  
+Backend  → http://localhost:5001
+```
+
+---
+
+### 🐳 Setup Using Docker
+
+**Start Docker Desktop**
+Make sure the Docker application is running on your system.
+
+**Navigate to the project directory**
+
+```bash
+cd ChatApp
+```
+
+**Build and run the Docker containers**
 
 ```bash
 
-cd backend
-npm install
-
-cd frontend
-npm install
-
-cd backend
-npm run dev
-
-cd frontend
-npm run dev
-
+   docker-compose up --build
 ```
 
 **Access the application**
 
 - Frontend: http://localhost:5173
 - Backend: http://localhost:5001
+
+**To Stop the Containers**
+When you’re done development, you can stop all running containers with:
+
+```bash
+docker-compose down
+```
+
+---
+
+## 📬 Contact Us
+
+This project is maintained by [**Pritam Kumar**](https://github.com/Pritam-nitj).If you have any ideas, suggestions, or encounter any issues, feel free to reach out!
+
+- **LinkedIn:** [linkedin.com/in/pritam-nitj](https://www.linkedin.com/in/pritam-nitj/)
+- **Email:** [pritamk6284987295@gmail.com](mailto:pritamk6284987295@gmail.com)
+
+ *Contributions, feedback, and collaboration are always welcome!*
