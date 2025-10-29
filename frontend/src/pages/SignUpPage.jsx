@@ -132,18 +132,17 @@ const SignupPage = () => {
                     <input
                       id="fullName"
                       type="text"
-                      className="peer w-full bg-[#2d3748] text-white rounded-xl border border-gray-700 focus:border-[#605dff] focus:ring-2 focus:ring-[#605dff]/40 transition-all duration-200 pl-12 pr-4 py-3.5 outline-none"
-                      placeholder=" "
+                      className="peer w-full bg-[#2d3748] text-white rounded-xl border border-gray-700 focus:border-[#605dff] focus:ring-2 focus:ring-[#605dff]/40 transition-all duration-200 pl-12 pr-4 py-3.5 outline-none placeholder-transparent"
+                      placeholder="Full Name"
                       value={formData.fullName}
                       onChange={(e) => setFormData({ ...formData, fullName: e.target.value })}
                       required
                     />
                     <label
                       htmlFor="fullName"
-                      className="absolute left-12 top-1/2 -translate-y-1/2 text-gray-400 transition-all duration-200
-                                peer-placeholder-shown:top-1/2 peer-placeholder-shown:text-base
-                                peer-focus:top-2 peer-focus:-translate-y-0 peer-focus:text-xs peer-focus:text-[#605dff]
-                                peer-[:not(:placeholder-shown)]:top-2 peer-[:not(:placeholder-shown)]:-translate-y-0 peer-[:not(:placeholder-shown)]:text-xs peer-[:not(:placeholder-shown)]:text-[#605dff]"
+                      className="absolute left-12 -top-2.5 text-[#605dff] text-xs bg-[#0f1419] px-1 transition-all duration-200
+                                peer-placeholder-shown:top-1/2 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-500 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:bg-transparent
+                                peer-focus:-top-2.5 peer-focus:text-xs peer-focus:text-[#605dff] peer-focus:bg-[#0f1419]"
                     >
                       Full Name
                     </label>
@@ -155,18 +154,17 @@ const SignupPage = () => {
                     <input
                       id="email"
                       type="email"
-                      className="peer w-full bg-[#2d3748] text-white rounded-xl border border-gray-700 focus:border-[#605dff] focus:ring-2 focus:ring-[#605dff]/40 transition-all duration-200 pl-12 pr-4 py-3.5 outline-none"
-                      placeholder=" "
+                      className="peer w-full bg-[#2d3748] text-white rounded-xl border border-gray-700 focus:border-[#605dff] focus:ring-2 focus:ring-[#605dff]/40 transition-all duration-200 pl-12 pr-4 py-3.5 outline-none placeholder-transparent"
+                      placeholder="Email"
                       value={formData.email}
                       onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                       required
                     />
                     <label
                       htmlFor="email"
-                      className="absolute left-12 top-1/2 -translate-y-1/2 text-gray-400 transition-all duration-200
-                                peer-placeholder-shown:top-1/2 peer-placeholder-shown:text-base
-                                peer-focus:top-2 peer-focus:-translate-y-0 peer-focus:text-xs peer-focus:text-[#605dff]
-                                peer-[:not(:placeholder-shown)]:top-2 peer-[:not(:placeholder-shown)]:-translate-y-0 peer-[:not(:placeholder-shown)]:text-xs peer-[:not(:placeholder-shown)]:text-[#605dff]"
+                      className="absolute left-12 -top-2.5 text-[#605dff] text-xs bg-[#0f1419] px-1 transition-all duration-200
+                                peer-placeholder-shown:top-1/2 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-500 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:bg-transparent
+                                peer-focus:-top-2.5 peer-focus:text-xs peer-focus:text-[#605dff] peer-focus:bg-[#0f1419]"
                     >
                       Email
                     </label>
@@ -178,18 +176,17 @@ const SignupPage = () => {
                     <input
                       id="password"
                       type={showPassword ? 'text' : 'password'}
-                      className="peer w-full bg-[#2d3748] text-white rounded-xl border border-gray-700 focus:border-[#605dff] focus:ring-2 focus:ring-[#605dff]/40 transition-all duration-200 pl-12 pr-12 py-3.5 outline-none"
-                      placeholder=" "
+                      className="peer w-full bg-[#2d3748] text-white rounded-xl border border-gray-700 focus:border-[#605dff] focus:ring-2 focus:ring-[#605dff]/40 transition-all duration-200 pl-12 pr-12 py-3.5 outline-none placeholder-transparent"
+                      placeholder="Password"
                       value={formData.password}
                       onChange={(e) => setFormData({ ...formData, password: e.target.value })}
                       required
                     />
                     <label
                       htmlFor="password"
-                      className="absolute left-12 top-1/2 -translate-y-1/2 text-gray-400 transition-all duration-200
-                                peer-placeholder-shown:top-1/2 peer-placeholder-shown:text-base
-                                peer-focus:top-2 peer-focus:-translate-y-0 peer-focus:text-xs peer-focus:text-[#605dff]
-                                peer-[:not(:placeholder-shown)]:top-2 peer-[:not(:placeholder-shown)]:-translate-y-0 peer-[:not(:placeholder-shown)]:text-xs peer-[:not(:placeholder-shown)]:text-[#605dff]"
+                      className="absolute left-12 -top-2.5 text-[#605dff] text-xs bg-[#0f1419] px-1 transition-all duration-200
+                                peer-placeholder-shown:top-1/2 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-500 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:bg-transparent
+                                peer-focus:-top-2.5 peer-focus:text-xs peer-focus:text-[#605dff] peer-focus:bg-[#0f1419]"
                     >
                       Password
                     </label>
@@ -212,8 +209,8 @@ const SignupPage = () => {
                         passwordError ? 'border-red-500' : 'border-gray-700'
                       } focus:border-[#605dff] focus:ring-2 ${
                         passwordError ? 'focus:ring-red-500/40' : 'focus:ring-[#605dff]/40'
-                      } transition-all duration-200 pl-12 pr-12 py-3.5 outline-none`}
-                      placeholder=" "
+                      } transition-all duration-200 pl-12 pr-12 py-3.5 outline-none placeholder-transparent`}
+                      placeholder="Confirm Password"
                       value={formData.confirmPassword}
                       onChange={(e) => {
                         const value = e.target.value;
@@ -228,10 +225,9 @@ const SignupPage = () => {
                     />
                     <label
                       htmlFor="confirmPassword"
-                      className="absolute left-12 top-1/2 -translate-y-1/2 text-gray-400 transition-all duration-200
-                                peer-placeholder-shown:top-1/2 peer-placeholder-shown:text-base
-                                peer-focus:top-2 peer-focus:-translate-y-0 peer-focus:text-xs peer-focus:text-[#605dff]
-                                peer-[:not(:placeholder-shown)]:top-2 peer-[:not(:placeholder-shown)]:-translate-y-0 peer-[:not(:placeholder-shown)]:text-xs peer-[:not(:placeholder-shown)]:text-[#605dff]"
+                      className="absolute left-12 -top-2.5 text-[#605dff] text-xs bg-[#0f1419] px-1 transition-all duration-200
+                                peer-placeholder-shown:top-1/2 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-500 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:bg-transparent
+                                peer-focus:-top-2.5 peer-focus:text-xs peer-focus:text-[#605dff] peer-focus:bg-[#0f1419]"
                     >
                       Confirm Password
                     </label>
