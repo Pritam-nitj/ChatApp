@@ -1,4 +1,3 @@
-// lib/db.js
 import mongoose from 'mongoose';
 
 // A global variable to hold the cached connection

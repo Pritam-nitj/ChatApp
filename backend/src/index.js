@@ -10,7 +10,7 @@ import { connectDB } from './lib/db.js';
 import cors from 'cors';
 import { app, server } from './lib/socket.js';
 import groupRoutes from './routes/group.route.js';
-import groupMessageRoutes from './routes/groupMessage.js';
+import groupMessageRoutes from './routes/groupMessage.route.js';
 import voiceRoutes from './routes/voice.route.js';
 import fs from 'fs';
 import path from 'path';

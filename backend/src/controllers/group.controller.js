@@ -105,7 +105,7 @@ export const getUserGroups = async (req, res) => {
       groups,
     });
   } catch (error) {
-    console.error('❌ Error fetching user groups:', error);
+    console.error('Error fetching user groups:', error);
     res.status(500).json({ message: 'Internal server error' });
   }
 };
@@ -133,7 +133,7 @@ export const leaveGroup = async (req, res) => {
       members: group.members,
     });
   } catch (error) {
-    console.error('❌ Error leaving group:', error);
+    console.error('Error leaving group:', error);
     res.status(500).json({ message: 'Internal server error' });
   }
 };
