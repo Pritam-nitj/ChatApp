@@ -3,7 +3,6 @@ import toast from '../lib/toast';
 import { axiosInstance } from '../lib/axios';
 import { useAuthStore } from './useAuthStore';
 import { useEncryptionStore } from './useEncryptionStore';
-// import { socket } from '../lib/socket';
 
 const getErrorMessage = (error, fallback = 'An error occurred') => {
   if (!error) return fallback;
